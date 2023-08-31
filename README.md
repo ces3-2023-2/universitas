@@ -1,2 +1,2 @@
 # universitas
-Repositorio de ejercicios para ces3
+Repositorio de ejercicios para ces3.
