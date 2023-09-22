@@ -41,7 +41,7 @@
         if ('async') {
             script.async = true;
         }
-        script.src = '/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+        script.src = 'media/js/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
         if (document.body) {
             document.body.appendChild(script);
         } else if (document.head) {
@@ -314,7 +314,7 @@
 <script src="media/js/jquery.matchHeight-min.js"></script>
 
 <!-- Main Script -->
-<script src="meida/js/script.js"></script>
+<script src="media/js/script.js"></script>
 
 </body>
 </html>
