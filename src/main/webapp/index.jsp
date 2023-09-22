@@ -13,7 +13,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GoDocs documentation theme</title>
+    <title>Universitas</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -116,6 +116,28 @@
             <div class="column is-3-widescreen is-4-desktop is-6-tablet">
                 <div class="card match-height">
                     <div class="card-body">
+
+                        <%
+                            int a = 5;
+                            float b = 3;
+                            double x = 3.4;
+                            char y = 'r';
+                            boolean o = true;
+
+
+                            char arreglo[] = {'a', 'n','a'};
+
+                            for (int i = 0; i < arreglo.length; i++) {
+                                %>
+                        <b>El valor es: </b> <%= arreglo[i]%><br/>
+                        <%
+                            }
+
+                        %>
+
+                        El valor de a es: <%= a++ %><br/>
+                        El valor de a es: <%= ++a %>
+
                         <i class="card-icon ti-panel mb-5"></i>
                         <h3 class="card-title h4">Basic Startup</h3>
                         <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
