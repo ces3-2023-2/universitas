@@ -49,7 +49,6 @@ public class StudentServlet extends MyServlet {
         JsonObject body =  this.getParamsFromPost(req);
         CtrStudent ctr = new CtrStudent();
         DtoStudent std = new DtoStudent(
-                body.get("id").getAsInt(),
                 body.get("document").getAsString(),
                 body.get("name").getAsString()
         );

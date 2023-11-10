@@ -26,19 +26,14 @@ public abstract class Conexion {
     // Clave de usuario
     public String password = "omesa2023!";
 
-    private Connection conn = null;
-
-
-    public Conexion(){
+    public Connection getConexion(){
         try {
             Class.forName(driver);
-            conn = DriverManager.getConnection(url, username, password);
-            System.out.println("***********");
-            System.out.println("Conexion exitosa a base de datos " + database);
+            return DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
-    abstract int suma(int a, int b);
 }

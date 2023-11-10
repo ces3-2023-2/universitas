@@ -13,7 +13,8 @@ public class DtoStudent {
         this.name = name;
     }
 
-    public DtoStudent(String document){
+    public DtoStudent(String document, String name){
+        this.name = name;
         this.document = document;
     }
 
